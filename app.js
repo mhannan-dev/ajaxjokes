@@ -8,7 +8,7 @@ window.onload = function() {
 
 
     //xhr.open('GET','data.txt',true);
-    xhr.open('GET', `http://api.icndb.com/jokes/random/${number}`, true);
+    xhr.open('GET', `//api.icndb.com/jokes/random/${number}`, true);
     xhr.onload = function() {
       if (this.status === 200) {    
         const response = JSON.parse(this.responseText);
